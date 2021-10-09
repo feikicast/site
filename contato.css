@@ -1,0 +1,110 @@
+body{ 
+    background-color: rgb(31, 31, 31);
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 18px;
+}
+.form textarea,
+.form button{
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+.form label{
+    color: greenyellow;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+input{
+    font: inherit;
+    width: 105.4%;
+    height: 3rem;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: unset;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    align-items: center;
+}
+span{
+    height: 1px;
+    width: 105.4%;
+    margin-bottom: 1rem;
+    background-color: #cfcfcf;
+    transition: .3s ease-in-out;
+}
+span::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 1rem;
+    background: linear-gradient(120deg, greenyellow, green);;
+    transition: .3s ease-in-out;
+}
+input:focus + span::after{
+    width: 105.4%;
+}
+.form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+    background-color: black;
+    align-items: center;
+    color: white;
+}
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+    align-items: center;
+}
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    border-color: greenyellow;
+    box-shadow: 0 0 0 3px rgba(172, 255, 47, 0.315);
+}
+.form button{
+    height: 3rem;
+    width: 105.4%;
+    outline: none;
+    background: linear-gradient(120deg, greenyellow, rgba(45, 129, 45, 0.685), greenyellow);
+    background-size: 200%;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.form button:hover{
+    background-position: right;
+    align-items: center;
+}
+h1{
+    color: greenyellow;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    width: 650px;
+}

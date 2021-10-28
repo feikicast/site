@@ -69,21 +69,10 @@ iframe{
 
     .logo{
         width: 100%;
-        height: 240px;
-    }
-}
-
-@media print {
-    body{
-        color: #000000;
-        background-color: #000000;
+        height: 53px;
     }
 
-    .logo{
-        position: center center;
-    }
-
-    hr{
-        color: #000000;
+    h2{
+        width: 100%;
     }
 }

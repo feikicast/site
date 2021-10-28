@@ -5,11 +5,13 @@ body{
     color: #adff2f;
     text-align: justify;
 }
+
 .rodpe{
     color: #adff2f;
     cursor: pointer;
     font-size: 1.12rem;
 }
+
 .foo{
     border-top: 1px solid #333;
     bottom: 0;
@@ -19,28 +21,69 @@ body{
     width: 140%;
     background-color: #000000;
 }
+
 .tabela{
     width: 80%;
     margin-left: 10px;
 }
+
 .lista{
     text-align: left;
     font-size: 18px;
 }
+
 .logo{
     cursor: pointer;
 }
+
 .lista{
     font-size: 1.2rem;
 }
+
 .link{
     background-color: #80808056;
     border-radius: 8px;
 }
+
 a{
     text-decoration: none;
     color: #adff2f;
 }
+
 h3{
     font-size: 1.2rem;
+}
+
+iframe{
+    border-radius: 10px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.774);
+}
+
+@media screen and (max-width: 600px){
+    iframe{
+        border-radius: 10px;
+        box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.774);
+        width: 100%;
+        height: 240px;
+    }
+
+    .logo{
+        width: 100%;
+        height: 240px;
+    }
+}
+
+@media print {
+    body{
+        color: #000000;
+        background-color: #000000;
+    }
+
+    .logo{
+        position: center center;
+    }
+
+    hr{
+        color: #000000;
+    }
 }

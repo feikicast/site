@@ -9,6 +9,50 @@
     <link rel="stylesheet" href="contato.css">
 </head>
 
+<style>
+    @media screen and (max-width: 600px){
+        h1{
+            width: 100%;
+        }
+
+        #name, #email{
+            width: 100%;
+        }
+
+        .form textarea:hover,
+        .form textarea:focus{
+            outline: none;
+            border-color: #adff2f;
+            box-shadow: 0 0 0 3px #acff2f50;
+            width: 93%;
+        }
+
+        .form textarea,
+        .form button{
+            display: block;
+            width: 94%;
+            align-items: center;
+        }
+
+        .form button{
+            width: 100%;
+        }
+
+        .form button:hover{
+            background-position: right;
+            align-items: center;
+        }
+
+        span::after{
+            width:0%;
+        }
+
+        input:focus + span::after{
+            width: 100%;
+        }
+    }
+</style>
+
 <body>
     <h1>Formulário de Contato</h1>
     <form action="https://formsubmit.co/feikicast@gmail.com" method="POST" class="form">

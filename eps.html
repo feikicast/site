@@ -8,6 +8,48 @@
     <title>Episódios 🐀</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    .ultimo{
+        padding-bottom: 70px;
+    }
+
+    @media screen and (max-width: 600px){
+        iframe{
+            border-radius: 10px;
+            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.774);
+            width: 100%;
+            height: 240px;
+        }
+
+        h2{
+            width: fit-content;
+        }
+
+        .foo{
+            height: 110px;
+            position: fixed;
+            width: 101.7%;
+        }
+
+        .tabela{
+            width: 100%;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+
+        .lista{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .ultimo{
+            padding-bottom: 105px;
+        }
+    }
+</style>
+
 <body>
     <a href="menu.html">
         <picture>
@@ -33,13 +75,14 @@
     </article>
 
     <br><br>
-    <a class="seta" rel="prev" href="trab-ing.html"><img src="imagens/setanova40.png" alt="botão de voltar"></a>
-    <br><br><br><br>
+    <div class="ultimo">
+        <a class="seta" rel="prev" href="trab-ing.html"><img src="imagens/setanova40.png" alt="botão de voltar"></a>
+    </div>
 </body>
 
 <footer class="foo">
     <table class="tabela">
-        <tr>
+        <tr class="lista">
             <td><h3>FeikiCast Corporation<sup>&copy;</sup></h3></td>
             <td><a class="rodpe" target="_blank" rel="next" href="contato.html"><h3>Entre em contato conosco</h3></td></a>
             <td><a class="rodpe" target="_blank" rel="next" href="membros.html"><h3>Quem somos nós?</h3></td></a>

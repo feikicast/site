@@ -9,22 +9,26 @@ body{
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
 .form{
     width: 100%;
     max-width: 32rem;
     font-size: 18px;
 }
+
 .form textarea,
 .form button{
     display: block;
     width: 100%;
     align-items: center;
 }
+
 .form label{
     color: #adff2f;
     line-height: 1;
     margin-bottom: 0.5rem;
 }
+
 input{
     font: inherit;
     width: 105.4%;
@@ -38,6 +42,7 @@ input{
     border-radius: 8px;
     align-items: center;
 }
+
 span{
     height: 1px;
     width: 105.4%;
@@ -45,6 +50,7 @@ span{
     background-color: #cfcfcf;
     transition: .3s ease-in-out;
 }
+
 span::after{
     content: '';
     display: block;
@@ -54,9 +60,11 @@ span::after{
     background: linear-gradient(120deg, #adff2f, #008000);;
     transition: .3s ease-in-out;
 }
+
 input:focus + span::after{
     width: 105.4%;
 }
+
 .form textarea{
     font: inherit;
     padding: 0.8rem;
@@ -68,17 +76,20 @@ input:focus + span::after{
     align-items: center;
     color: #ffffff;
 }
+
 .form textarea{
     min-height: 13rem;
     resize: vertical;
     align-items: center;
 }
+
 .form textarea:hover,
 .form textarea:focus{
     outline: none;
     border-color: #adff2f;
     box-shadow: 0 0 0 3px #acff2f50;
 }
+
 .form button{
     height: 3rem;
     width: 105.4%;
@@ -96,10 +107,12 @@ input:focus + span::after{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }
+
 .form button:hover{
     background-position: right;
     align-items: center;
 }
+
 h1{
     color: #adff2f;
     font-size: 3rem;

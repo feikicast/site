@@ -8,33 +8,79 @@
     <title>feikicast 🐀</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    @media screen and (max-width: 600px){
+        iframe{
+            border-radius: 10px;
+            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.774);
+            width: 100%;
+            height: 240px;
+        }
+
+        h2{
+            width: fit-content;
+        }
+
+        .foo{
+            height: 110px;
+            position: fixed;
+            width: 101.7%;
+        }
+
+        .tabela{
+            width: 100%;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+
+        .lista{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .ultimo{
+            padding-bottom: 50px;
+        }
+    }
+</style>
+
 <body>
-    <a class="logo" href="menu.html"><img src="imagens/logo-botao.png" alt="logo do site"></a>
+    <a href="menu.html">
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/logo-botao-cll.png" type="image/png">
+            <img src="imagens/logo-botao.png" alt="FeikiCast">
+        </picture>
+    </a>
     <hr>
     <audio src="media/feikicast-intro.mp3" controls autoplay></audio>
-    <h2>Trabalhos de Inglês</h2>
-    <h3>Clique no link abaixo para ter acesso aos trabalhos de inglês</h3>
-    <p><a class="link" target="_blank" href="trab-ing.html">⠀Acesse clicando aqui!⠀</a></p></p>
-    <br><hr>
-    <h2>Venha conhecer nossa página na GitHub</h2>
-    <h3>Clique no link abaixo para ter acesso a todo o nosso conteúdo que já foi ou será publicado
-        em nosso perfil na GitHub! Lá você poderá conferir em primeira mão como que é a programação
-        do nosso site, podendo se inspirar em nosso projeto para criar o seu!
-    </h3>
-    <p><a class="link" target="_blank" rel="external" href="https://github.com/feikicast">⠀Acesse clicando aqui!⠀</a></p></p>
-    <hr>
-    <h2>Área de Downloads</h2>
-    <h3>Clique no link abaixo para ter acesso à nossa área onde você poderá fazer o 
-        download de todos os pdfs que foram usados até o momento.
-    </h3>
-    <p><a class="link" target="_blank" href="download.html">⠀Acesse clicando aqui!⠀</a></p>
-    <br><hr>
-    <h2>Nossa área de Edits</h2>
-    <h3>Clique no link abaixo para ter acesso ao maior repositório de cortes e edits das nossas aulas 
-        gravadas. Se você tiver alguma ideia de novo corte ou edit, é só nos mandar um e-mail na área 
-        de contato, nós vamos avaliar a sua sugestão e fazê-la assim que possível!
-    </h3>
-    <p><a class="link" target="_blank" rel="external" href="edit.html">⠀Acesse clicando aqui!⠀</a></p></p>
+    <article>
+        <h2>Trabalhos</h2>
+        <h3>Clique no link abaixo para ter acesso a todos os nossos trabalhos 
+            feitos até o momento:</h3>
+        <p><a class="link" target="_blank" href="trabalhos.html">⠀Acesse clicando aqui!⠀</a></p></p>
+        <br><hr>
+        <h2>Venha conhecer nossa página na GitHub</h2>
+        <h3>Clique no link abaixo para ter acesso a todo o nosso conteúdo que já foi ou será publicado
+            em nosso perfil na GitHub! Lá você poderá conferir em primeira mão como que é a programação
+            do nosso site, podendo se inspirar em nosso projeto para criar o seu!
+        </h3>
+        <p><a class="link" target="_blank" rel="external" href="https://github.com/feikicast">⠀Acesse clicando aqui!⠀</a></p></p>
+        <hr>
+        <h2>Área de Downloads</h2>
+        <h3>Clique no link abaixo para ter acesso à nossa área onde você poderá fazer o 
+            download de todos os pdfs que foram usados até o momento.
+        </h3>
+        <p><a class="link" target="_blank" href="download.html">⠀Acesse clicando aqui!⠀</a></p>
+        <br><hr>
+        <h2>Nossa área de Edits</h2>
+        <h3>Clique no link abaixo para ter acesso ao maior repositório de cortes e edits das nossas aulas 
+            gravadas. Se você tiver alguma ideia de novo corte ou edit, é só nos mandar um e-mail na área 
+            de contato, nós vamos avaliar a sua sugestão e fazê-la assim que possível!
+        </h3>
+        <p class="ultimo"><a class="link" target="_blank" rel="external" href="edit.html">⠀Acesse clicando aqui!⠀</a></p></p>
+    </article>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222484656047222"
      crossorigin="anonymous"></script>
@@ -43,7 +89,7 @@
 
 <footer class = "foo">
     <table class="tabela">
-        <tr>
+        <tr class="lista">
             <td><h3>FeikiCast Corporation<sup>&copy;</sup></h3></td>
             <td><a class="rodpe" target="_blank" rel="next" href="contato.html"><h3>Entre em contato conosco</h3></td></a>
             <td><a class="rodpe" target="_blank" rel="next" href="membros.html"><h3>Quem somos nós?</h3></td></a>

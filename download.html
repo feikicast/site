@@ -20,6 +20,8 @@
 
         h2{
             width: fit-content;
+            margin-left: 100px;
+            background-color: rgba(255, 0, 0, 0.603);
         }
 
         .foo{
@@ -39,26 +41,53 @@
             text-align: center;
             font-size: 1.2rem;
         }
+
+        .div-ext{
+            background-color: #000000;
+            padding: 5px;
+            padding-bottom: 8px;
+            margin-bottom: 100px;
+            border-radius: 10px;
+        }
+
+        .h3-ext{
+            padding: 10px;
+        }
+    }
+
+    @media screen and (min-width: 999px){
+        .img{
+            width: 0%;
+            height: 0px;
+        }
+
+        .div-int,
+        .div-ext{
+            background-color: #00000000;
+            color: #00000000;
+            font-size: 0px;
+        }
+
+        .h2-ext,
+        .h3-ext{
+            font-size: 0px;
+            background-color: #00000000;
+            color: #00000000;
+        }
     }
 
     p{
         font-size: 1.3rem;
-        background: linear-gradient(#858E94, #1f1f1f);
+        background-color: #000000;
         border-radius: 8px;
-        text-align: center;
-        margin-right: 30px;
-        cursor: pointer;
-        padding: 7px;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-shadow: 0px 5px 1px #2f460d;
         width: max-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
     }
 
     p:hover{
         cursor: pointer;
-        box-shadow: 0px 3px 1px #2f460d;
-        background: linear-gradient(#3d3d3d, #60666b);
     }
 </style>
 
@@ -71,9 +100,25 @@
     </a>
     <hr>
     <p><a href="downL-trab-ing.html">PDFs de Inglês</a></p>
-    <br>
     <p><a href="downL-trab-org.html">PDFs de Org. Comp.</a></p>
-    <br>
+    <div class="div-ext">
+        <h2 class="h2-ext">AVISO IMPORTANTE!</h2>
+        <h3 class="h3-ext">
+            Notamos que você está utilizando o site através de um dispositivo mobile, por isso
+            gostaríamos de informar que para fazer o download dos PDFs que estarão nas próximas 
+            páginas, é importante que você tenha alguma forma de extrair o arquivo de dentro do pacote 
+            zip onde ele será baixado, clique no provedor de downloads oficial do seu dispositivo logo abaixo 
+            para fazer o download de uma aplicação recomendada por nós do Feikicast:
+        </h3>
+        <div class="div-int">
+            <a target="_blank" rel="external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files&hl=pt_BR&gl=US">
+                <img class="img" src="imagens/google-play.png" alt="google play">
+            </a>
+            <a target="_blank" rel="external" href="https://apps.apple.com/br/app/zip-rar-file-extractor/id769409043">
+                <img class="img" src="imagens/apple-store.png" alt="apple store">
+            </a>
+        </div>
+    </div>
 </body>
 
 <footer class = "foo">

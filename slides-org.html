@@ -64,7 +64,7 @@
         }
 
         .foo{
-            height: 80px;
+            height: 50px;
             position: fixed;
             width: 101.7%;
         }
@@ -74,6 +74,7 @@
             margin-right: 0px;
             margin-left: 0px;
             margin-bottom: 0px;
+            margin-top: 12px;
         }
 
         .lista{
@@ -82,11 +83,32 @@
         }
 
         .h3-rdp{
-            font-size: 16px;
+            font-size: 0px;
         }
 
         .ultimo{
             padding-bottom: 105px;
+        }
+
+        .corp{
+            font-size: 0px;
+        }
+
+        .corp::after{
+            font-size: 18px;
+            content: 'Corp©';
+        }
+
+        #cntt::after{
+            font-size: 18px;
+            content: 'Contato';
+            margin-right: 15px;
+        }
+
+        #somos::after{
+            font-size: 18px;
+            content: 'Nós';
+            margin-right: 10px;
         }
     }
 </style>

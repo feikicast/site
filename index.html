@@ -9,53 +9,207 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .resp{
-        color: #adff2f;
+    .clip-tree {
+        position: relative;
+        margin-top: 20px;
     }
 
-    p{
-        font-size: 1.5rem;
-        background: linear-gradient(#858E94, #1f1f1f);
-        border-radius: 8px;
-        text-align: center;
-        margin-right: 30px;
-        cursor: pointer;
-        padding: 7px;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-shadow: 0px 5px 1px #2f460d;
+    
+    .clip-tree .layer {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: green;
+        clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
     }
 
-    p:hover{
-        cursor: pointer;
-        box-shadow: 0px 3px 1px #2f460d;
-        background: linear-gradient(#1f1f1f, #858E94);
+    
+    .clip-tree .shadow {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: black;
+        clip-path: polygon(50% 0%, 0% 110%, 95% 100%);
+        margin-top: 20px;
+        margin-left: 10px;
     }
 
-    div{
+    .clip-tree div:nth-child(1) {
+        transform: translateY(5px);
+        z-index: 3;
+    }
+
+    .clip-tree div:nth-child(2) {
+        transform: translateY(0);
+        z-index: 3;
+    }
+
+    .clip-tree div:nth-child(3) {
+        transform: translateY(40px);
+        z-index: 2;
+    }
+
+    .clip-tree div:nth-child(4) {
+        transform: translateY(35px);
+        z-index: 2;
+    }
+
+    .clip-tree div:nth-child(5) {
+        transform: translateY(70px);
+        z-index: 1;
+    }
+    .clip-tree:before {
+        content: ‘⭐️’;
+        position: absolute;
+        left: 42px;
+        z-index: 10;
+        top: -9px;
+    }
+
+    .clip-tree .madeira{
+        margin-top: 150px;
+        margin-left: 35px;
+        width: 30px;
+        height: 50px;
+        background-color: rgb(139, 93, 6);
+        position: absolute;
+    }
+
+    .natal{
+        margin-left: 100px;
+    }
+
+    h3{
+        margin-left: 15px;
+    }
+
+    h2{
+        margin-left: 5px;
+    }
+
+    .poema{
         display: flex;
+        background-color: rgba(128, 128, 128, 0.342);
+        width: fit-content;
+        padding-right: 15px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    @media(max-width: 500px){
-        h2, h3{
-            width: 100%;
+    .tit{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .botão{
+        margin-left: auto;
+        margin-right: auto;
+        height: 3rem;
+        width: 20%;
+        outline: none;
+        background: linear-gradient(120deg, #adff2f, #2d812daf, #adff2f);
+        background-size: 200%;
+        margin-bottom: 2rem;
+        border: unset;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+
+    .botão:hover{
+        background-position: right;
+        align-items: center;
+    }
+
+    a > h2{
+        background-color: #00000000;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 600px){
+        .tit{
             width: fit-content;
+            font-size: 20px;
         }
 
-        div{
-            display: block;
-            width: fit-content;
+        .natal > h3{
+            font-size: 15px;
+        }
+
+        .poema > h3{
+            display: contents;
+            font-size: 18px;
+        }
+
+        .botão{
+            width: 70%;
         }
     }
 </style>
 
 <body>
-    <h2>Antes de acessar o site responda o item abaixo:</h2>
-    <h3>Você está utilizando nosso site através de um computador, celular ou tablet?</h3>
-    <div>
-        <p><a class="resp" rel="next" href="cll.html">Celular</a></p>
-        <p><a class="resp" rel="next" href="cll.html">Tablet</a></p>
-        <p><a class="resp" rel="external" href="menu.html">Computador</a></p>
+    <div class="clip-tree">
+        <div class="shadow"></div>
+        <div class="layer"></div>
+        <div class="shadow"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="madeira"></div>
+    </div>
+    <div class="natal">
+        <h2>FELIZ NATAL!!</h2>
+        <h3>
+            Toda a equipe do Feikicast deseja pra você um feliz Natal! 
+            Faça bom proveito de suas férias, saia bastante, cante bastante, 
+            beba bastante, dance bastante. Enfim, curta como se a noite não 
+            fosse acabar!
+        </h3>
+        <h3>
+            Nos vemos em Março!
+        </h3>
+        <h3>
+            Carpe diem! Foi um prazer estar com vocês por esse semestre. E que venham mais e mais, 
+            mas dessa vez, com aulas presenciais, para que possamos rir e nos 
+            divertir juntos!
+        </h3>
+    </div>
+    <h2 class="tit">
+        Para finalizar com chave de ouro, fique com esse belo poema
+    </h2>
+    <div class="poema">
+        <h3>
+            No alto daquele cume<br>
+            Plantei uma roseira<br>
+            O vento no cume bate<br>
+            A rosa no cume cheira<br>
+            <br>
+            Quando vem a chuva fina<br>
+            Salpicos no cume caem<br>
+            Formigas no cume entram<br>
+            Abelhas do cume saem<br>
+        </h3>
+        <h3>
+            Quando cai a chuva grossa<br>
+            A água do cume desce<br>
+            O barro do cume escorre<br>
+            O mato no cume cresce<br>
+            <br>
+            Então, quando cessa a chuva<br>
+            No cume volta a alegria<br>
+            Pois torna a brilhar de novo<br>
+            O Sol que no cume ardia<br>
+        </h3>
+    </div>
+    <div class="botão">
+        <a href="menu.html"><h2>MENU</h2></a>
     </div>
 </body>
 

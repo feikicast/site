@@ -123,6 +123,60 @@
     p:hover{
         cursor: pointer;
     }
+
+    @media screen and (max-width: 800px){
+        .h3-rdp{
+            font-size: 0px;
+        }
+
+        .corp{
+            font-size: 0px;
+        }
+
+        .corp::after{
+            font-size: 24px;
+            content: 'Corp©';
+        }
+
+        #cntt::after{
+            font-size: 24px;
+            content: 'Contato';
+            margin-right: 0px;
+        }
+
+        #somos::after{
+            font-size: 24px;
+            content: 'Nós';
+            margin-right: 0px;
+        }
+
+        .tabela{
+            margin-top: 12px;
+        }
+
+        .ultimo{
+            padding-bottom: 50px;
+        }
+
+        .img{
+            width: 0%;
+            height: 0px;
+        }
+
+        .div-int,
+        .div-ext{
+            background-color: #00000000;
+            color: #00000000;
+            font-size: 0px;
+        }
+
+        .h2-ext,
+        .h3-ext{
+            font-size: 0px;
+            background-color: #00000000;
+            color: #00000000;
+        }
+    }
 </style>
 
 <body>
@@ -153,6 +207,7 @@
             </a>
         </div>
     </div>
+    <br><br>
     <div class="ultimo">
         <a class="seta" rel="prev" href="menu.html"><img src="imagens/setanova40.png" alt="botão de voltar"></a>
     </div>

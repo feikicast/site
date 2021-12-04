@@ -87,6 +87,37 @@
             width: 47%;
         }
     }
+
+    @media screen and (max-width: 800px){
+        .h3-rdp{
+            font-size: 0px;
+        }
+
+        .corp{
+            font-size: 0px;
+        }
+
+        .corp::after{
+            font-size: 24px;
+            content: 'Corp©';
+        }
+
+        #cntt::after{
+            font-size: 24px;
+            content: 'Contato';
+            margin-right: 0px;
+        }
+
+        #somos::after{
+            font-size: 24px;
+            content: 'Nós';
+            margin-right: 0px;
+        }
+
+        .tabela{
+            margin-top: 12px;
+        }
+    }
 </style>
 
 <body>
@@ -138,7 +169,7 @@
     
 </body>
 
-<footer class = "foo">
+<footer class="foo">
     <table class="tabela">
         <tr class="lista">
             <td><h3 class="corp">FeikiCast Corporation<sup>&copy;</sup></h3></td>

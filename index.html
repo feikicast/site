@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/feikicast-24px.ico" type="image/x-icon">
-    <title>feikicast 🐀</title>
+    <title>Feliz Natal! 🐀</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
@@ -14,7 +14,6 @@
         margin-top: 20px;
     }
 
-    
     .clip-tree .layer {
         position: absolute;
         width: 100px;
@@ -23,7 +22,6 @@
         background: green;
         clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
     }
-
     
     .clip-tree .shadow {
         position: absolute;
@@ -60,13 +58,6 @@
         transform: translateY(70px);
         z-index: 1;
     }
-    .clip-tree:before {
-        content: ‘⭐️’;
-        position: absolute;
-        left: 42px;
-        z-index: 10;
-        top: -9px;
-    }
 
     .clip-tree .madeira{
         margin-top: 150px;
@@ -75,6 +66,13 @@
         height: 50px;
         background-color: rgb(139, 93, 6);
         position: absolute;
+    }
+
+
+
+    .clip2-tree {
+        width: 0px;
+        height: 0px;
     }
 
     .natal{
@@ -138,6 +136,7 @@
         .tit{
             width: fit-content;
             font-size: 20px;
+            margin-top: 250px;
         }
 
         .natal > h3{
@@ -146,11 +145,70 @@
 
         .poema > h3{
             display: contents;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .botão{
             width: 70%;
+        }
+
+        .clip2-tree {
+            position: relative;
+            margin-top: -222px;
+        }
+
+        .clip2-tree .layer2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: green;
+            clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+        }
+        
+        .clip2-tree .shadow2 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: black;
+            clip-path: polygon(50% 0%, 0% 110%, 95% 100%);
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .clip2-tree div:nth-child(1) {
+            transform: translateY(5px);
+            z-index: 3;
+        }
+
+        .clip2-tree div:nth-child(2) {
+            transform: translateY(0);
+            z-index: 3;
+        }
+
+        .clip2-tree div:nth-child(3) {
+            transform: translateY(40px);
+            z-index: 2;
+        }
+
+        .clip2-tree div:nth-child(4) {
+            transform: translateY(35px);
+            z-index: 2;
+        }
+
+        .clip2-tree div:nth-child(5) {
+            transform: translateY(70px);
+            z-index: 1;
+        }
+
+        .clip2-tree .madeira2{
+            margin-top: 150px;
+            margin-left: 35px;
+            width: 30px;
+            height: 50px;
+            background-color: rgb(139, 93, 6);
+            position: absolute;
         }
     }
 </style>
@@ -163,23 +221,32 @@
         <div class="layer"></div>
         <div class="layer"></div>
         <div class="madeira"></div>
+
+        <div class="natal">
+            <h2>FELIZ NATAL!!</h2>
+            <h3>
+                Toda a equipe do Feikicast deseja pra você um feliz Natal! 
+                Faça bom proveito de suas férias, saia bastante, cante bastante, 
+                beba bastante, dance bastante. Enfim, curta como se a noite não 
+                fosse acabar!
+            </h3>
+            <h3 class="cll">
+                Nos vemos em Março!
+            </h3>
+            <h3 id="carpe" class="cll">
+                Carpe diem! Foi um prazer estar com vocês por esse semestre. E que venham mais e mais, 
+                mas dessa vez, com aulas presenciais, para que possamos rir e nos 
+                divertir juntos!
+            </h3>
+        </div>
     </div>
-    <div class="natal">
-        <h2>FELIZ NATAL!!</h2>
-        <h3>
-            Toda a equipe do Feikicast deseja pra você um feliz Natal! 
-            Faça bom proveito de suas férias, saia bastante, cante bastante, 
-            beba bastante, dance bastante. Enfim, curta como se a noite não 
-            fosse acabar!
-        </h3>
-        <h3>
-            Nos vemos em Março!
-        </h3>
-        <h3>
-            Carpe diem! Foi um prazer estar com vocês por esse semestre. E que venham mais e mais, 
-            mas dessa vez, com aulas presenciais, para que possamos rir e nos 
-            divertir juntos!
-        </h3>
+    <div class="clip2-tree">
+        <div class="shadow2"></div>
+        <div class="layer2"></div>
+        <div class="shadow2"></div>
+        <div class="layer2"></div>
+        <div class="layer2"></div>
+        <div class="madeira2"></div>
     </div>
     <h2 class="tit">
         Para finalizar com chave de ouro, fique com esse belo poema

@@ -13,6 +13,12 @@
         width: 1230%;
     }
 
+    .clip2-tree > h2{
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .clip-tree {
         position: relative;
         margin-top: 20px;
@@ -101,25 +107,25 @@
         margin-left: 5px;
     }
 
-    .poema{
+    .clip2-tree > .poema{
         display: flex;
         background-color: rgba(128, 128, 128, 0.342);
-        width: fit-content;
+        width: max-content;
         padding-right: 15px;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .tit{
+    .clip2-tree > .tit{
         margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
     }
 
     .botão{
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 220px;
+        margin-top: 120px;
         height: 3rem;
         width: 20%;
         outline: none;
@@ -162,7 +168,6 @@
         }
 
         .tit, .poema{
-            margin-left: 120px;
             width: max-content;
         }
 
@@ -178,7 +183,7 @@
 
         .clip2-tree {
             position: relative;
-            margin-top: -400px;
+            margin-top: 20px;
         }
 
         .clip2-tree .layer2 {
@@ -307,6 +312,35 @@
             background-color: rgb(139, 93, 6);
             position: absolute;
         }
+
+        .clip2-tree > .poema{
+            display: flex;
+            background-color: rgba(128, 128, 128, 0.342);
+            width: max-content;
+            padding-right: 15px;
+            border-radius: 10px;
+            margin-left: 130px;
+        }
+
+        .clip2-tree > .tit{
+            margin-top: 20px;
+            margin-left: 105px;
+            text-align: unset;
+        }
+
+        .botão{
+            margin-left: 150px;
+            height: 3rem;
+            width: 20%;
+            outline: none;
+            background: linear-gradient(120deg, #adff2f, #2d812daf, #adff2f);
+            background-size: 200%;
+            margin-bottom: 2rem;
+            border: unset;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
     }
 
     @media screen and (max-width: 800px){
@@ -314,8 +348,37 @@
             width: fit-content;
         }
 
+        .clip2-tree > .poema{
+            display: flex;
+            background-color: rgba(128, 128, 128, 0.342);
+            width: max-content;
+            padding-right: 15px;
+            border-radius: 10px;
+        }
+
+        .clip2-tree > .tit{
+            margin-top: 20px;
+            text-align: unset;
+            width: 620px
+        }
+
         .botão{
+            margin-left: 150px;
+            margin-top: 350px;
+            height: 3rem;
             width: 50%;
+            outline: none;
+            background: linear-gradient(120deg, #adff2f, #2d812daf, #adff2f);
+            background-size: 200%;
+            margin-bottom: 2rem;
+            border: unset;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .clip-tree > .natal{
+            width: 540px;
         }
     }
 </style>

@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+    .natal{
+        width: 1230%;
+    }
+
     .clip-tree {
         position: relative;
         margin-top: 20px;
+        width: 100px;
     }
 
     .clip-tree .layer {
@@ -21,6 +26,9 @@
         border-radius: 50%;
         background: green;
         clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+        outline-width: 2px;
+        outline-style: dashed;
+        outline-color: whitesmoke;
     }
     
     .clip-tree .shadow {
@@ -32,6 +40,9 @@
         clip-path: polygon(50% 0%, 0% 110%, 95% 100%);
         margin-top: 20px;
         margin-left: 10px;
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: red;
     }
 
     .clip-tree div:nth-child(1) {
@@ -68,9 +79,12 @@
         position: absolute;
     }
 
-
-
     .clip2-tree {
+        width: 0px;
+        height: 0px;
+    }
+
+    .clip3-tree {
         width: 0px;
         height: 0px;
     }
@@ -133,14 +147,23 @@
     }
 
     @media screen and (max-width: 600px){
-        .tit{
-            width: fit-content;
-            font-size: 20px;
-            margin-top: 250px;
+        .natal{
+            width: 360%;
         }
 
         .natal > h3{
             font-size: 15px;
+        }
+
+        .clip2-tree > h2{
+            font-size: 20px;
+            margin-top: 430px;
+            width: 320px;
+        }
+
+        .tit, .poema{
+            margin-left: 120px;
+            width: max-content;
         }
 
         .poema > h3{
@@ -150,11 +173,12 @@
 
         .botão{
             width: 70%;
+            margin-top: 29%;
         }
 
         .clip2-tree {
             position: relative;
-            margin-top: -222px;
+            margin-top: -400px;
         }
 
         .clip2-tree .layer2 {
@@ -164,6 +188,9 @@
             border-radius: 50%;
             background: green;
             clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: whitesmoke;
         }
         
         .clip2-tree .shadow2 {
@@ -175,6 +202,9 @@
             clip-path: polygon(50% 0%, 0% 110%, 95% 100%);
             margin-top: 20px;
             margin-left: 10px;
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;
         }
 
         .clip2-tree div:nth-child(1) {
@@ -203,6 +233,73 @@
         }
 
         .clip2-tree .madeira2{
+            margin-top: 150px;
+            margin-left: 35px;
+            width: 30px;
+            height: 50px;
+            background-color: rgb(139, 93, 6);
+            position: absolute;
+        }
+
+
+
+        .clip3-tree {
+            position: relative;
+            margin-top: 300px;
+        }
+
+        .clip3-tree .layer3 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: green;
+            clip-path: polygon(50% 5%, 100% 85%, 100% 100%, 0 100%, 0 85%);
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: whitesmoke;
+        }
+        
+        .clip3-tree .shadow3 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: black;
+            clip-path: polygon(50% 0%, 0% 110%, 95% 100%);
+            margin-top: 20px;
+            margin-left: 10px;
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;
+        }
+
+        .clip3-tree div:nth-child(1) {
+            transform: translateY(5px);
+            z-index: 3;
+        }
+
+        .clip3-tree div:nth-child(2) {
+            transform: translateY(0);
+            z-index: 3;
+        }
+
+        .clip3-tree div:nth-child(3) {
+            transform: translateY(40px);
+            z-index: 2;
+        }
+
+        .clip3-tree div:nth-child(4) {
+            transform: translateY(35px);
+            z-index: 2;
+        }
+
+        .clip3-tree div:nth-child(5) {
+            transform: translateY(70px);
+            z-index: 1;
+        }
+
+        .clip3-tree .madeira3{
             margin-top: 150px;
             margin-left: 35px;
             width: 30px;
@@ -257,34 +354,43 @@
         <div class="layer2"></div>
         <div class="layer2"></div>
         <div class="madeira2"></div>
+        <h2 class="tit">
+            Para finalizar com chave de ouro, fique com esse belo poema
+        </h2>
+        <div class="poema">
+            <h3>
+                No alto daquele cume<br>
+                Plantei uma roseira<br>
+                O vento no cume bate<br>
+                A rosa no cume cheira<br>
+                <br>
+                Quando vem a chuva fina<br>
+                Salpicos no cume caem<br>
+                Formigas no cume entram<br>
+                Abelhas do cume saem<br>
+            </h3>
+            <h3>
+                Quando cai a chuva grossa<br>
+                A água do cume desce<br>
+                O barro do cume escorre<br>
+                O mato no cume cresce<br>
+                <br>
+                Então, quando cessa a chuva<br>
+                No cume volta a alegria<br>
+                Pois torna a brilhar de novo<br>
+                O Sol que no cume ardia<br>
+            </h3>
+        </div>
     </div>
-    <h2 class="tit">
-        Para finalizar com chave de ouro, fique com esse belo poema
-    </h2>
-    <div class="poema">
-        <h3>
-            No alto daquele cume<br>
-            Plantei uma roseira<br>
-            O vento no cume bate<br>
-            A rosa no cume cheira<br>
-            <br>
-            Quando vem a chuva fina<br>
-            Salpicos no cume caem<br>
-            Formigas no cume entram<br>
-            Abelhas do cume saem<br>
-        </h3>
-        <h3>
-            Quando cai a chuva grossa<br>
-            A água do cume desce<br>
-            O barro do cume escorre<br>
-            O mato no cume cresce<br>
-            <br>
-            Então, quando cessa a chuva<br>
-            No cume volta a alegria<br>
-            Pois torna a brilhar de novo<br>
-            O Sol que no cume ardia<br>
-        </h3>
+    <div class="clip3-tree">
+        <div class="shadow3"></div>
+        <div class="layer3"></div>
+        <div class="shadow3"></div>
+        <div class="layer3"></div>
+        <div class="layer3"></div>
+        <div class="madeira3"></div>
     </div>
+    <br>
     <div class="botão">
         <a href="menu.html"><h2>MENU</h2></a>
     </div>

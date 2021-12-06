@@ -113,8 +113,7 @@
         width: max-content;
         padding-right: 15px;
         border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 100px;
     }
 
     .clip2-tree > .tit{
@@ -152,13 +151,59 @@
         font-size: 40px;
     }
 
+    @media screen and (max-width: 800px){
+        .clip2-tree > .poema{
+            width: 0px;
+            height: 0px;
+        }
+
+        .clip2-tree > .tit{
+            width: 0px;
+            height: 0px;
+            background-color: #00000000;
+        }
+
+        .poema > h3,
+        .clip2-tree > h2{
+            font-size: 0px;
+        }
+
+        .natal{
+            width: fit-content;
+        }
+
+        .natal > h3{
+            font-size: 20px;
+            width: 543px;
+        }
+
+        .botão{
+            margin-left: 200px;
+            margin-top: -30px;
+            height: 3rem;
+            width: 50%;
+            outline: none;
+            background: linear-gradient(120deg, #adff2f, #2d812daf, #adff2f);
+            background-size: 200%;
+            margin-bottom: 2rem;
+            border: unset;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .5s ease-in-out;
+        }
+
+        .clip-tree > .natal{
+            width: 100%;
+        }
+    }
+
     @media screen and (max-width: 600px){
         .natal{
             width: fit-content;
         }
 
         .natal > h3{
-            font-size: 15px;
+            font-size: 19px;
             width: 350px;
         }
 
@@ -183,7 +228,7 @@
 
         .clip3-tree {
             position: relative;
-            margin-top: -30px;
+            margin-top: -150px;
         }
 
         .clip3-tree .layer3 {
@@ -258,61 +303,16 @@
         }
 
         .botão{
-            height: 3rem;
-            width: 20%;
-            outline: none;
-            background: linear-gradient(120deg, #adff2f, #2d812daf, #adff2f);
-            background-size: 200%;
-            border: unset;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: .5s ease-in-out;
-        }
-    }
-
-    @media screen and (max-width: 800px){
-        .clip2-tree > .poema{
-            width: 0px;
-            height: 0px;
-        }
-
-        .clip2-tree > .tit{
-            width: 0px;
-            height: 0px;
-            background-color: #00000000;
-        }
-
-        .poema > h3,
-        .clip2-tree > h2{
-            font-size: 0px;
-        }
-
-        .natal{
-            width: fit-content;
-        }
-
-        .natal > h3{
-            font-size: 20px;
-            width: 600px;
-        }
-
-        .botão{
-            margin-left: 200px;
-            margin-top: -30px;
+            margin-top: 50px;
             height: 3rem;
             width: 50%;
             outline: none;
             background: linear-gradient(120deg, #adff2f, #2d812daf, #adff2f);
             background-size: 200%;
-            margin-bottom: 2rem;
             border: unset;
             border-radius: 10px;
             cursor: pointer;
             transition: .5s ease-in-out;
-        }
-
-        .clip-tree > .natal{
-            width: 100%;
         }
     }
 </style>

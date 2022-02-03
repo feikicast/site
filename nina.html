@@ -121,6 +121,55 @@
         margin-left: 7px;
         margin-right: 10px;
     }
+
+    @media screen and (max-width: 750px){
+        .nina,
+        .nina2,
+        hr,
+        audio{
+            width: 0px;
+            height: 0px;
+            border-color: #00000000;
+        }
+
+        .txt{
+            margin-left: 7px;
+            font-size: 0px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .txt::after{
+            font-size: 2rem;
+            content: '☠página disponível apenas no computador☠';
+            line-height: 150%;
+        }
+
+        .ar-livre,
+        .mg{
+            width: 0px;
+            height: 0px;
+        }
+
+        .cont1,
+        .cont2,
+        h2,
+        h3{
+            background-color: #00000000;
+            width: 0px;
+            height: 0px;
+            font-size: 0px;
+        }
+
+        #nina-cadeira,
+        #nina-sentada{
+            width: 0px;
+            height: 0px;
+            background-color: #00000000;
+            border: 0px solid #00000000;
+            box-shadow: 0px 0px 0px #00000000;
+        }
+    }
 </style>
 
 <body>
@@ -143,6 +192,8 @@
     </div>
     <h3>Essa página é para homenagear uma doguinha que se foi tão precocemente.</h3>
     <h3>Descanse em paz, querida Nina. O Feikicast sente falta de você!</h3>
+    <audio src="media/nina-santos.mp3" controls autoplay></audio>
+    <br>
     <hr>
     <a name="Fotos"><br></a>
     <a href="imagens/nina-cadeira.jpeg">
@@ -181,7 +232,5 @@
         que ela esteja em um bom lugar e possa aproveitar tudo que não pode durante o seu curto tempo conosco. 
         Descanse em paz, minha querida Nina.
     </h3>
-    <br>
-    <audio src="media/nina-santos.mp3" controls autoplay></audio>
 </body>
 </html>

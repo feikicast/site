@@ -9,19 +9,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .lista{
-        font-size: 1.2rem;
+    h2{
+        color: #adff2f
     }
 
-    .listinha{
-        background-color: black;
-        width: max-content;
-        border-radius: 12px;
+    aside{
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 
-    .listinha > a{
-        margin-left: 10px;
-        margin-right: 10px;
+    aside > a{
+        width: fit-content;
     }
 
     li{
@@ -33,7 +31,6 @@
         color: white;
         border: unset;
         border-radius: 8px;
-        cursor: pointer;
         transition: .5s ease-in-out;
         list-style: none;
     }
@@ -43,25 +40,59 @@
         align-items: center;
     }
 
-    @media screen and (max-width: 600px){
-        iframe{
-            border-radius: 10px;
-            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.774);
-            width: 100%;
-            height: 240px;
-        }
+    .ul1{
+        columns: 2;
+    }
 
+    .li1{
+        background: transparent;
+    }
+
+    .h21{
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: 600px){
         h2{
             width: fit-content;
         }
 
-        .lista{
+        .ul1{
+            columns: 1;
+        }
+
+        li > h2{
+            margin-left: -10px;
+        }
+
+        li{
+            margin-left: -20px;
+        }
+
+        aside{
             text-align: center;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .ultimo{
             padding-bottom: 100px;
+        }
+
+        .prod{
+            font-size: 0px;
+        }
+
+        .prod::after{
+            font-size: 1.1rem;
+            content: 'Produtores';
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        .prog, .rip{
+            margin-left: 17%;
         }
     }
 </style>
@@ -74,55 +105,62 @@
         </picture>
     </a>
     <hr>
-    <h3 class="listinha"><a href="#Prod">Produtores de Conteúdo</a></h3>
-    <h3 class="listinha"><a href="#Des">Designers</a></h3>
-    <h3 class="listinha"><a href="#Rev">Revisores</a></h3>
-    <h3 class="listinha"><a href="#Prog">Programadores</a></h3>
-    <h3 class="listinha"><a href="#RIP">R.I.P</a></h3>
-    <hr>
-    <h2><a name="Prod">Produtores de Conteúdo</a></h2>
-    <ul class="lista">
-        <strong>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997121719&text=Ol%C3%A1%2C%20Enzo%20Alberoni"><li> ⠀Enzo Alberoni⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522996061410&text=Ol%C3%A1%2C%20Enzo%20Souza"><li> ⠀Enzo Souza ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997936662&text=Ol%C3%A1%2C%20Luiz%20Licassali"><li> ⠀Luiz Licassali ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997930829&text=Ol%C3%A1%2C%20Matheus%20Tavares"><li> ⠀Matheus Tavares ⠀</li></a>
-        </strong>
-    </ul>
-    <br>
-    <h2><a name="Des">Designers</a></h2>
-    <ul class="lista">
-        <strong>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=553388209133&text=Ol%C3%A1%2C%20Diogo%20Santos"><li> ⠀Diogo Santos ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522992563376&text=Ol%C3%A1%2C%20Pedro%20Camargo"><li> ⠀Pedro Camargo ⠀</li></a>
-        </strong>
-    </ul>
-    <br>
-    <h2><a name="Rev">Revisores</a></h2>
-    <ul class="lista">
-        <strong>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997105989&text=Ol%C3%A1%2C%20Gabriel%20Almeida"><li> ⠀Gabriel Almeida ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522998440431&text=Ol%C3%A1%2C%20Nathan%20Oliveira"><li> ⠀Nathan Oliveira ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522999802933&text=Ol%C3%A1%2C%20Lucas%20Pimentel"><li> ⠀Lucas Pimentel ⠀</li></a>
-        </strong>
-    </ul>
-    <br>
-    <h2><a name="Prog">Programadores</a></h2>
-    <ul class="lista">
-        <strong>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522996129907&text=Ol%C3%A1%2C%20Fabiano%20Ribeiro"><li> ⠀Fabiano Ribeiro ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5528999888420&text=Ol%C3%A1%2C%20Gabriel%20Costa"><li> ⠀Gabriel Costa ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522996087560&text=Ol%C3%A1%2C%20Pedro%20Bull"><li> ⠀Pedro Bull ⠀</li></a>
-            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5528999496688&text=Ol%C3%A1%2C%20Thallys%20de%20Souza"><li> ⠀Thallys de Souza ⠀</li></a>
-        </strong>
-    </ul>
-    <br>
-    <h2><a name="RIP">R.I.P</a></h2>
-    <ul class="lista">
-        <strong>
-            <a target="_blank" rel="external" href="https://g1.globo.com/mundo/noticia/2022/01/11/morre-magawa-rato-farejador-de-minas-terrestres-premiado-por-bravura-animal.ghtml"><li> ⠀Magawa Hero-Rat ⠀</li></a>
-        </strong>
-    </ul>
+    <main>
+        <ul class="ul1">
+            <li class="li1">
+                <h2 class="h21">Produtores de Conteúdo</h2>
+                <aside>
+                    <ul>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997121719&text=Ol%C3%A1%2C%20Enzo%20Alberoni"><li> ⠀Enzo Alberoni⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522996061410&text=Ol%C3%A1%2C%20Enzo%20Souza"><li> ⠀Enzo Souza ⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997936662&text=Ol%C3%A1%2C%20Luiz%20Licassali"><li> ⠀Luiz Licassali ⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997930829&text=Ol%C3%A1%2C%20Matheus%20Tavares"><li> ⠀Matheus Tavares ⠀</li></a>
+                    </ul>
+                </aside>
+            </li>
+            <br>
+            <li class="li1">
+                <h2>Designers</h2>
+                <aside>
+                    <ul>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=553388209133&text=Ol%C3%A1%2C%20Diogo%20Santos"><li> ⠀Diogo Santos ⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522992563376&text=Ol%C3%A1%2C%20Pedro%20Camargo"><li> ⠀Pedro Camargo ⠀</li></a>
+                    </ul>
+                </aside>
+            </li>
+            <br>
+            <li class="li1">
+                <h2 class="h21">Revisores</h2>
+                <aside>
+                    <ul>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522997105989&text=Ol%C3%A1%2C%20Gabriel%20Almeida"><li> ⠀Gabriel Almeida ⠀</li></a>
+                        <a class="nathan" target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522998440431&text=Ol%C3%A1%2C%20Nathan%20Oliveira"><li> ⠀Nathan Oliveira ⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522999802933&text=Ol%C3%A1%2C%20Lucas%20Pimentel"><li> ⠀Lucas Pimentel ⠀</li></a>
+                    </ul>
+                </aside>
+            </li>
+            <br>
+            <li class="li1">
+                <h2>Programadores</h2>
+                <aside>
+                    <ul>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522996129907&text=Ol%C3%A1%2C%20Fabiano%20Ribeiro"><li> ⠀Fabiano Ribeiro ⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5528999888420&text=Ol%C3%A1%2C%20Gabriel%20Costa"><li> ⠀Gabriel Costa ⠀</li></a>
+                        <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5522996087560&text=Ol%C3%A1%2C%20Pedro%20Bull"><li> ⠀Pedro Bull ⠀</li></a>            <a target="_blank" rel="external" href="https://api.whatsapp.com/send?phone=5528999496688&text=Ol%C3%A1%2C%20Thallys%20de%20Souza"><li> ⠀Thallys de Souza ⠀</li></a>
+                    </ul>
+                </aside>
+            </li>
+            <br>
+            <li class="li1">
+                <h2>R.I.P</h2>
+                <aside>
+                    <ul>
+                        <a target="_blank" rel="external" href="https://g1.globo.com/mundo/noticia/2022/01/11/morre-magawa-rato-farejador-de-minas-terrestres-premiado-por-bravura-animal.ghtml"><li> ⠀Magawa Hero-Rat ⠀</li></a>
+                    </ul>
+                </aside>
+            </li>
+        </ul>
+    </main>
     <br>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222484656047222"
      crossorigin="anonymous"></script>
